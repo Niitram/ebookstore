@@ -32,3 +32,16 @@
 .bg-eerie-black{
     background-color:$eerie-black ;
 }
+
+
+/* botones */
+.lineaBoton{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 3px;
+    /* margin: auto; */
+    border-radius: 10px;
+    background-color: $indian-red;
+}

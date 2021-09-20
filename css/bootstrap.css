@@ -4087,7 +4087,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
