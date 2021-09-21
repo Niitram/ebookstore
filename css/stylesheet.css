@@ -44,10 +44,90 @@
   border-radius: 10px;
   background-color: #d05353; }
 
+.containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; }
+  .containerCard .card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 16px 0px rgba(137, 176, 174, 0.75);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(137, 176, 174, 0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(137, 176, 174, 0.75); }
+    .containerCard .card .card__img {
+      position: absolute;
+      top: -50px;
+      left: 23px;
+      width: 250px; }
+      .containerCard .card .card__img img {
+        width: 100%; }
+    .containerCard .card .card__info {
+      position: absolute;
+      bottom: 90px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      overflow: hidden; }
+      .containerCard .card .card__info .card__btnThree {
+        position: absolute;
+        left: -13px;
+        border-radius: 50%;
+        padding: 10px 15px;
+        border: 2px solid #89b0ae;
+        font-size: 1rem; }
+      .containerCard .card .card__info .card__titulo {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #d05353; }
+      .containerCard .card .card__info .card__autor {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #e58f65; }
+      .containerCard .card .card__info .card__btnCarrito {
+        position: absolute;
+        right: -13px;
+        border-radius: 50%;
+        padding: 10px 15px;
+        border: 2px solid #89b0ae;
+        font-size: 1rem; }
+    .containerCard .card .card__bottom {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      border-top: 1px solid #bee3db;
+      padding-top: 20px; }
+      .containerCard .card .card__bottom .card__precio {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #555b6e;
+        margin-bottom: 10px; }
+        .containerCard .card .card__bottom .card__precio .card__descuento {
+          font-size: 1rem;
+          font-weight: 500;
+          color: green; }
+      .containerCard .card .card__bottom .card__btnVer {
+        display: inline-block;
+        border: 1px solid #89b0ae;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        border-radius: 5px; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+  * a {
+    text-decoration: none; }
 
 /* navbar index */
 .dropdown-toggle::after {

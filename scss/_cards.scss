@@ -1,0 +1,100 @@
+.containerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    .card{
+        position: relative;
+        width: 300px;
+        height: 500px;
+        box-shadow: 0px 0px 16px 0px rgba(137, 176, 174, .75);
+        -webkit-box-shadow: 0px 0px 16px 0px rgba(137, 176, 174, .75);
+        -moz-box-shadow: 0px 0px 16px 0px rgba(137, 176, 174, .75);
+
+
+
+        .card__img{
+            position: absolute;
+            top: -50px;
+            left: 23px;
+            width: 250px;
+            
+            img{
+                width: 100%;
+            }
+        }
+
+        .card__info{
+            position: absolute;
+            bottom: 90px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            overflow: hidden;
+            .card__btnThree{
+                position: absolute;
+                left: -13px;
+                border-radius: 50%;
+                padding: 10px 15px;
+                border: 2px solid $morning-blue;
+                font-size: 1rem;
+            }
+            .card__titulo{
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $indian-red;
+            }
+            .card__autor{
+                font-size: 1rem;
+                font-weight: 600;
+                color: $copper-crayola;
+            }
+            .card__btnCarrito{
+                position: absolute;
+                right: -13px;
+                border-radius: 50%;
+                padding: 10px 15px;
+                border: 2px solid $morning-blue;
+                font-size: 1rem;
+            }
+        }
+
+        .card__bottom{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;   
+            width: 100%;
+            border-top: 1px solid $powder-blue;
+            padding-top: 20px;
+
+
+            .card__precio{
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $independence;
+                margin-bottom: 10px;
+                .card__descuento{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: green;
+
+                }
+            }
+
+            .card__btnVer{
+                display: inline-block;
+                border: 1px solid $morning-blue;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
