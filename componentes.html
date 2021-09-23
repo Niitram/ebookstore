@@ -75,7 +75,7 @@
     </header>
 
     <!-- SECTION DE PRUEBA PARA TARJETA -->
-    <section class="containerCard">
+    <section class="containerAlto">
         <div class="card">
             <div class="card__img">
                 <img src="img/The-Arrivals.jpg" alt="">
@@ -107,22 +107,35 @@
     </section>
 <div class="limite">...</div> <!-- Delimitacion del componente -->
     <!-- card with description -->
-    <section>
+    <section class="containerAlto">
         <!-- contenedor -->
-        <div class="row">
-            <!-- col with image and buttons -->
-            <div class="col-6">
-                <div>
-                    <img src="" alt="">
+        <div class="cardDesc row">
+            <!-- col-left with image and buttons -->
+            <div class="cardDesc__colLeft col-sm-6 d-flex flex-column align-items-center">
+                <div class="cardDesc__img p-3">
+                    <img src="img/ficcion/Un-mundo-invertido-christopher-priest.jpg" alt="">
                 </div>
-                <div>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                <div class="cardDesc__btns">
+                    <a href="#" class="btn btn-secondary mb-2 mx-3"><i class="bi bi-share-fill"></i></a>
+                    <a href="#" class="btn btn-danger mb-2 mx-3"><i class="bi bi-heart-fill"></i></a>
+                    <a href="#" class="btn btn-secondary mb-2 mx-3" ><i class="bi bi-cart-plus-fill"></i></a>
                 </div>
             </div>
-            <div class="col-6">
-
+            <!-- col-right with description -->
+            <div class="cardDesc__colRight col-sm-6 position-relative d-flex flex-column">
+                <div class="cardDesc__titulo py-2 my-2 ms-2">
+                    <span class="fs-3 color-raisin-black fw-bolder">The Arrivals</span>
+                </div>
+                <div class="cardDesc__autor d-flex justify-content-between py-2 mb-3 ms-2">
+                    <span class="fs-5 color-raisin-black fw-bolder">Lucas LLoyd</span>
+                    <span class="fs-5 color-raisin-black fw-bolder">$321</span>
+                </div>
+                <div class="cardDesc__resume px-1 ">
+                    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat alias soluta in? Velit id possimus, laborum tempore cuuntur illo voluptates corporis eum? Porro veniam quis aliquid excepturi exercitationem quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nam dolorem omnis unde modi. Debitis laudantium repudiandae tempore voluptas. </p>
+                </div>
+                <div class="cardDesc__btnVer py-2 text-center">
+                    <a href="#" class="btn fs-5"><i class="bi bi-search pe-2"></i>Ver descripción</a>
+                </div>
             </div>
         </div>
     </section>
