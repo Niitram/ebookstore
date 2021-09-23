@@ -21,6 +21,7 @@
     <header class=" sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-yellow-crayola ">
             <div class="container">
+                <!-- logo -->
                 <a class="navbar__logo navbar-brand position-relative" href="../index.html"><svg xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="29" viewBox="0 0 150 29">
                         <image id="Capa_1" data-name="Capa 1" y="1" width="150" height="26"
@@ -56,11 +57,11 @@
                                 <div class="lineaBoton"></div>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/pages/crimen_y_misterio.html">Criminologia</a></li>
-                                <li><a class="dropdown-item" href="/pages/ficcion.html">Ficcion</a></li>
-                                <li><a class="dropdown-item" href="/pages/religion_y_motivacion_personal.html">Motivacion</a></li>
-                                <li><a class="dropdown-item" href="/pages/romance.html">Romance</a></li>
-                                <li><a class="dropdown-item" href="/pages/terror.html">Terror</a></li>
+                                <li><a class="dropdown-item" href="../pages/crimen_y_misterio.html">Criminologia</a></li>
+                                <li><a class="dropdown-item" href="../pages/ficcion.html">Ficcion</a></li>
+                                <li><a class="dropdown-item" href="../pages/religion_y_motivacion_personal.html">Motivacion</a></li>
+                                <li><a class="dropdown-item" href="../pages/romance.html">Romance</a></li>
+                                <li><a class="dropdown-item" href="../pages/terror.html">Terror</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -82,11 +83,16 @@
             </div>
         </nav>
     </header>
+    <!-- Start Section: genre selected -->
+    <!-- container -->
     <section class="ficcion container">
+        <!-- grid row -->
         <div class="ficcion__titulo row">
             <h1 class="col my-5 position-relative py-4">Religion y Motivacion<div class="lineaBoton"></div></h1>
         </div>
+        <!-- Grid row 1 -->
         <div class="row d-flex justify-content-sm-around flex-wrap ">
+            <!-- Btn toolbar container -->
             <div class="btn-toolbar col-sm-6 my-3 align-self-center" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group me-2" role="group" aria-label="First group">
                     <button type="button" class="btn btn-primary bg-raisin-black">1</button>
@@ -96,11 +102,13 @@
                     <button type="button" class="btn btn-primary bg-raisin-black">...</button>
                 </div>
             </div>
+            <!-- Btn order container top -->
             <div class="btn-group col-sm-2 my-3 d-inline-block" role="group">
                 <button id="btnGroupDrop1" type="button" class="btn btn-primary bg-raisin-black dropdown-toggle"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Ordenar por
                 </button>
+                <!-- list drop-down -->
                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                     <li><a class="dropdown-item" href="#">Mayor precio</a></li>
                     <li><a class="dropdown-item" href="#">Menor precio</a></li>
@@ -109,9 +117,11 @@
                 </ul>
             </div>
         </div>
+        <!-- Grid row 2 -->
+        <!-- Grid Cards -->
         <div class="row">
             <div class="bg-apricot mt-4 col-12 py-4 d-flex flex-wrap justify-content-center gap-4">
-                <!-- EMPIEZAN LAS CARDS -->
+                <!-- Card 1 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/el_codigo_de_las_mentes.webp" alt="">
@@ -140,6 +150,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Card 2 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/el_libro_tibetano_de_la_vida_y_de_la_muerte.jpg" alt="">
@@ -196,6 +207,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Card 3 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/en_busco_de_la_religion_personal.webp" alt="">
@@ -224,6 +236,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Card 4 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/habitos_de_superacion.jpg" alt="">
@@ -252,6 +265,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Card 5 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/las_religiones_del_mundo.webp" alt="">
@@ -280,6 +294,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Card 6 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/ser_la_mejor_version.webp" alt="">
@@ -308,6 +323,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Card 7 -->
                 <div class="card">
                     <div class="card__img">
                         <img src="../img/religion_y_motivacion_personal/todo_es_posible.jpg" alt="">
@@ -338,7 +354,10 @@
                 </div>
             </div>
         </div>
+        <!-- End grid Cards -->
+        <!-- Grid row 3 -->
         <div class="row d-flex justify-content-center">
+            <!-- Btn order container bottom -->
             <div class="btn-toolbar col-2 my-3" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group me-2" role="group" aria-label="First group">
                     <button type="button" class="btn btn-primary bg-raisin-black">1</button>
@@ -350,6 +369,7 @@
             </div>
         </div>
     </section>
+    <!-- End Section: genre selected -->
     <!-- Footer -->
     <footer class="bg-yellow-crayola text-center text-black">
         <!-- Grid container -->
