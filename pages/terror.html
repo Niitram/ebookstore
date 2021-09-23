@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- enlazado de css de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- enlazado de iconos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- enlazado de css -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+    <title>ebookstore</title>
+</head>
+
+<body>
+    <header class=" sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-yellow-crayola ">
+            <div class="container">
+                <a class="navbar__logo navbar-brand position-relative" href="../index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="29" viewBox="0 0 150 29">
+                        <image id="Capa_1" data-name="Capa 1" y="1" width="150" height="26"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative" aria-current="page" href="../index.html">
+                                <i class="bi bi-house-door"></i>
+                                Home
+                                <div class="lineaBoton"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#">
+                                <i class="bi bi-bookmark-plus"></i>
+                                Más buscados
+                                <div class="lineaBoton"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-blockquote-left"></i>
+                                Géneros
+                                <div class="lineaBoton"></div>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/pages/crimen_y_misterio.html">Criminologia</a></li>
+                                <li><a class="dropdown-item" href="/pages/ficcion.html">Ficcion</a></li>
+                                <li><a class="dropdown-item" href="/pages/religion_y_motivacion_personal.html">Motivacion</a></li>
+                                <li><a class="dropdown-item" href="/pages/romance.html">Romance</a></li>
+                                <li><a class="dropdown-item" href="/pages/terror.html">Terror</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Discontinuados</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-warning btnNav" type="submit">
+                            <i class="bi bi-cart4"></i>
+                        </button>
+                        <input class="form-control me-2" type="search" placeholder="Título, género, etc..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-warning btnNav" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="ficcion container">
+        <div class="ficcion__titulo row">
+            <h1 class="col my-5 position-relative py-4">Horror<div class="lineaBoton"></div></h1>
+        </div>
+        <div class="row d-flex justify-content-sm-around flex-wrap ">
+            <div class="btn-toolbar col-sm-6 my-3 align-self-center" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary bg-raisin-black">1</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">2</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">3</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">4</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">...</button>
+                </div>
+            </div>
+            <div class="btn-group col-sm-2 my-3 d-inline-block" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary bg-raisin-black dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Ordenar por
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+                    <li><a class="dropdown-item" href="#">Menor precio</a></li>
+                    <li><a class="dropdown-item" href="#">Más buscados</a></li>
+                    <li><a class="dropdown-item" href="#">Más vendidos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg-apricot mt-4 col-12 py-4 d-flex flex-wrap justify-content-center gap-4">
+                <!-- EMPIEZAN LAS CARDS -->
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/allan_poe_collection.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/cementerio_de_animales.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/cuentos_macabros.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/el_resplandor.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/el_visitante.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/it.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/la_musica_del_silencioso.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="../img/horror/misery.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__btnThree">
+                            <a href=""><i class="bi bi-share"></i></a>
+                        </div>
+                        <span class="card__titulo">
+                            The Arrivals
+                        </span>
+                        <span class="card__autor">
+                            Lucas LLoyd
+                        </span>
+                        <div class="card__btnCarrito">
+                            <a href=""><i class="bi bi-cart4"></i></a>
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <span class="card__precio">
+                            $345
+                            <span class="card__descuento">20% off</span>
+                        </span>
+                        <a href="" class="card__btnVer">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="btn-toolbar col-2 my-3" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary bg-raisin-black">1</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">2</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">3</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">4</button>
+                    <button type="button" class="btn btn-primary bg-raisin-black">...</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-yellow-crayola text-center text-black">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Form -->
+            <section class="">
+            <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+                <p class="pt-2">
+                    <strong>¿Deseas recibir novedades?</strong>
+                </p>
+            </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Direccion de correo</label>
+                </div>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-dark mb-4">
+                    Suscribirse
+                </button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </form>
+            </section>
+            <!-- Section: Form -->
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    distinctio earum repellat quaerat voluptatibus placeat nam,
+                    commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                    aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-black" href="#">Ebookstore.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
