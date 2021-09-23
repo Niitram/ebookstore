@@ -33,6 +33,40 @@
 .bg-eerie-black {
   background-color: #191919; }
 
+/* color letters */
+.color-eerie-black {
+  color: #191919; }
+
+.color-raisin-black {
+  color: #1b1d23; }
+
+.color-independence {
+  color: #555b6e; }
+
+.color-indian-red {
+  color: #d05353; }
+
+.color-copper-crayola {
+  color: #e58f65; }
+
+.color-morning-blue {
+  color: #89b0ae; }
+
+.color-powder-blue {
+  color: #bee3db; }
+
+.color-yellow-crayola {
+  color: #f9e784; }
+
+.color-apricot {
+  color: #ffd6ba; }
+
+.color-lemon-meringue {
+  color: #f1e8b8; }
+
+.color-cultured {
+  color: #faf9f9; }
+
 /* botones */
 /*Colocar al padre position relative*/
 .lineaBoton {
