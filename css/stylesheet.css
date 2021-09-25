@@ -67,6 +67,10 @@
 .color-cultured {
   color: #faf9f9; }
 
+/* border */
+.border-solid-black-1 {
+  border: 1px solid black; }
+
 /* botones */
 /*Colocar al padre position relative*/
 .lineaBoton {
@@ -84,7 +88,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #faf9f9; }
 
 .card {
   position: relative;
@@ -173,20 +178,28 @@
   background: linear-gradient(320deg, rgba(255, 255, 255, 0.842) 10%, #89b0ae 33%); }
 
 .cardDesc__img {
-  width: 280px; }
+  width: 280px;
+  z-index: 100; }
   .cardDesc__img img {
     width: 100%; }
 
-.cardDesc__btns a {
-  border-radius: 50%; }
+.cardDesc__btns {
+  z-index: 100; }
+  .cardDesc__btns a {
+    border-radius: 50%; }
 
 /* column right */
 .cardDesc__colRight {
   width: 300px;
   background-color: rgba(255, 255, 255, 0.842); }
 
+.cardDesc__titulo span {
+  border-bottom: 2px solid #89b0ae; }
+
 .cardDesc__autor {
-  border-bottom: 1px solid #e58f65; }
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.315);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.335);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.356); }
 
 .cardDesc__resume {
   width: 280px;
@@ -198,14 +211,51 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, #e4dcdf 33%); }
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.658) 33%); }
   .cardDesc__btnVer a,
   .cardDesc__btnVer i {
-    font-weight: 600; }
+    font-weight: 600;
+    color: white; }
 
 @media (max-width: 600px) {
   .cardDesc {
     width: 300px; } }
+
+/* Start card with description Blur */
+.cardDesc--bg-blur {
+  position: relative;
+  background-image: url("../img/ficcion/Un-mundo-invertido-christopher-priest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.cardDesc--bg-blur::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px); }
+
+/* ----------liston para cards---------------- */
+.liston::after {
+  content: 'Best seller';
+  z-index: 110;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  display: inline-block;
+  height: 30px;
+  width: 115px;
+  padding-right: 10px;
+  font-weight: 600;
+  text-align: end;
+  color: azure;
+  /* background-color: rgba(7, 201, 65, 0.651); */
+  background-color: rgba(12, 119, 2, 0.651);
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 17% 50%);
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 17% 50%); }
 
 * {
   margin: 0;

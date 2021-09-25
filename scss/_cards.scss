@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: $cultured;
 }
 .card{
     position: relative;
@@ -118,11 +119,13 @@
 }
 .cardDesc__img{
     width: 280px;
+    z-index: 100;
     img{
         width: 100%;
     }
 }
 .cardDesc__btns{
+    z-index: 100;
     a{
         border-radius: 50%;
     }
@@ -134,11 +137,14 @@
     width: 300px;
     background-color: rgba(255, 255, 255, 0.842);
 }
-.cardDesc__autor{
-    border-bottom: 1px solid $copper-crayola;
+.cardDesc__titulo span{
+    border-bottom: 2px solid $morning-blue;
 }
-
-
+.cardDesc__autor{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.315);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.335);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.356);
+}
 .cardDesc__resume{
     width: 280px;
     height: 290px;
@@ -149,13 +155,60 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 10%, rgba(228,220,223,1) 33%);    a,
+    
+    background: linear-gradient(180deg, rgba(255,255,255,0) 10%, rgba(0, 0, 0, 0.658) 33%);    a,
     i{
         font-weight: 600;
+        color: white;
     }
 }
 @media (max-width: 600px) {
     .cardDesc{
         width: 300px;
     }
+}
+
+/* Start card with description Blur */
+.cardDesc--bg-blur{
+    position: relative;
+    background-image: url('../img/ficcion/Un-mundo-invertido-christopher-priest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardDesc--bg-blur::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+}
+
+
+
+
+
+
+
+/* ----------liston para cards---------------- */
+
+.liston::after{
+    content: 'Best seller';
+    z-index: 110;
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    display: inline-block;
+    height: 30px;
+    width: 115px;
+    padding-right: 10px;
+    font-weight: 600;
+    text-align: end;
+    color: azure;
+    /* background-color: rgba(7, 201, 65, 0.651); */
+    background-color: rgba(12, 119, 2, 0.651);
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 17% 50%);
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%, 17% 50%);
 }
